@@ -1,15 +1,15 @@
-const homeHandler=require('./home');
-const publicHandler=require('./public');
+/* eslint-disable linebreak-style */
 
+const homeHandler = require('./home');
+const publicHandler = require('./public');
 
-function router(request,response){
-
-    const url=request.url;
-    if(url=='/'){
-      homeHandler(request,response)
-    }
-    else if(url.includes('public')){
-      publicHandler(request,response);
-    }
+// eslint-disable-next-line require-jsdoc
+function router(request, response) {
+  const {url} = request;
+  if (url == '/') {
+    homeHandler(request, response);
+  } else if (url.includes('public')) {
+    publicHandler(request, response);
+  }
 }
-module.exports=router;
+module.exports = router;
