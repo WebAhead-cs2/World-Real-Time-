@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>World Real Time</title>
+    <style>
+        body{
+            background-image: url('https://cdn.shopify.com/s/files/1/0278/1529/products/LMO_TIME_ZONES_MAP2_Masterweb2tif.jpg?v=1571403356');
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        #myInput{
+            border: 1px solid black;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            width:450px;
+             margin-left: 700px;
+             margin-top: 30px;
+             height: 30px;
+        }
+        .autocomplete{
+            position: relative;
+            display: inline-block;
+        }
+        i{
+           height:19px;
+            padding: 10px;
+            margin-top: 7px;
+        }
+        button{
+         border:1px solid black;
+      
+        }
+    </style>
+</head>
+<body>
+    <h1>World Real Time</h1>
+    <script src="worldFun.js"></script>
+    <form autocomplete="off">
+        <div class="autocomplete">
+          <input id="myInput" type="text" name="myCity" placeholder="City...">
+          <button type="submit"><i class="fa fa-search" ></i></button>
+        </div>
+
+      </form>
+    
+</body>
+</html>
