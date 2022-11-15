@@ -4,7 +4,7 @@ const path=require('path');
 
 // eslint-disable-next-line require-jsdoc
 function homeHandler(request, response) {
-  const filePath=path.join(__dirname, '..', 'public', 'WorldRealTime.html');
+  const filePath=path.join(__dirname, '..', 'src/Public', 'index.html');
   fs.readFile(filePath, (error, file)=>{
     if (error) {
       response.writeHead(404, {'content-type': 'text/html'});

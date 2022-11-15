@@ -1,12 +1,15 @@
 /* eslint-disable linebreak-style */
 
-/* eslint-disable require-jsdoc */const fs = require('fs');
+/* eslint-disable require-jsdoc */
+const fs = require('fs');
 const path = require('path');
 
 const types = {
   html: 'text/html',
   css: 'text/css',
   js: 'aplication/javascript',
+  jpg: 'image/jpeg',
+
 };
 
 function publicHandler(request, response) {
